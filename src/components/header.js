@@ -1,4 +1,4 @@
-import React, { useEffect,useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
 
 //styled Components
@@ -11,13 +11,10 @@ import {
   useGlobalDispatchContext,
 } from "../context/globalContext"
 
-
-
 const Header = ({ onCursor, toggleMenu, setToggleMenu }) => {
   const { currentTheme } = useGlobalStateContext()
   const dispatch = useGlobalDispatchContext()
-  const hamburger= useRef(null)
-
+  const hamburger = useRef(null)
 
   const toggleTheme = () => {
     if (currentTheme === "dark") {
@@ -51,7 +48,7 @@ const Header = ({ onCursor, toggleMenu, setToggleMenu }) => {
               aria-label="Mute volume"
               tabIndex="0"
             ></span>
-            <Link to="">W</Link>
+            <Link to="/">W</Link>
           </Logo>
           <Menu ref={hamburger} onClick={() => setToggleMenu(!toggleMenu)}>
             <button>

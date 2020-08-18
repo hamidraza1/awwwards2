@@ -44,7 +44,7 @@ const HomeFeatured = ({ onCursor }) => {
       }}
     >
       <Container>
-        <Link>
+        <Link to="/">
           <FeaturedContent
             onHoverStart={() => sethovered(!hovered)}
             onHoverEnd={() => sethovered(!hovered)}
