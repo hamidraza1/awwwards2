@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+
 
 //styled components
 import { createGlobalStyle, ThemeProvider } from "styled-components"
@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+ /*  const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `) */
 
   //Two themes of homePage
   const darkTheme = {

@@ -14,7 +14,7 @@ import HomeFeatured from "../components/homePage/homeFeatured"
 import HomeAbout from "../components/homePage/homeAbout"
 
 const IndexPage = props => {
-  const { currentTheme, cursorStyles } = useGlobalStateContext()
+  const {cursorStyles } = useGlobalStateContext()
   const dispatch = useGlobalDispatchContext()
 
   const onCursor = cursorType => {

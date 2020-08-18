@@ -8,7 +8,7 @@ const Footer=({onCursor})=>{
     return(
         <FooterNav>
             <Container>
-                <Flex spaceBetween>
+                <Flex>
                     <FooterContent>
                         <p>902.315.1234</p>
                         <p>info@org.de</p>

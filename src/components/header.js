@@ -47,6 +47,9 @@ const Header = ({ onCursor, toggleMenu, setToggleMenu }) => {
               onClick={toggleTheme}
               onMouseEnter={() => onCursor("pointer")}
               onMouseLeave={onCursor}
+              role="button"
+              aria-label="Mute volume"
+              tabIndex="0"
             ></span>
             <Link to="">W</Link>
           </Logo>

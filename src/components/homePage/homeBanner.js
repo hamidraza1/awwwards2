@@ -63,7 +63,7 @@ const HomeBanner = ({ onCursor }) => {
         renderingCtx.drawImage(drawingElement, 0, 0)
       }
     })
-  }, [currentTheme])
+  },[currentTheme])
 
   const parent = {
     initial: {
